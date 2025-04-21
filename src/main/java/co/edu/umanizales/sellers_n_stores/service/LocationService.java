@@ -103,7 +103,7 @@ public class LocationService {
         return null;
     }
 
-    public List<Location> getCapitals(String Code) {
+    public List<Location> getCapitals() {
         for (Location location : locations) {
             if (location.getCode().endsWith("001")) {
                 return locations;
