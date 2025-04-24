@@ -63,4 +63,9 @@ public class LocationController {
     public List<Location> getLocationsByCapitals() {
         return locationService.getCapitals();
         }
+
+        @GetMapping(path = "/starts/{a}/ends/{b}")
+    public List<Location> getLocationsByStartsAndEnds(@PathVariable String a, @PathVariable String b) {
+        return locationService.getLocationByinitialAndLastLetter(a, b);
+        }
 }

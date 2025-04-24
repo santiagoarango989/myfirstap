@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Getter
 @Setter
 @AllArgsConstructor
 
-public class Location {
-    private String code;
-    private String description;
+public class Store {
+
+    private String StoreDescription;
+    private String StoreName;
+    private String StoreAddress;
+    private Location location;
 }

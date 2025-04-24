@@ -111,4 +111,14 @@ public class LocationService {
         }
         return null;
     }
+
+    public List<Location> getLocationByinitialAndLastLetter(String initialLetter, String finalLetter) {
+        List<Location> results = new ArrayList<>();
+        for (Location l : locations) {
+            if (l.getDescription().startsWith(initialLetter) && l.getDescription().endsWith(finalLetter)) {
+                results.add(l);
+            }
+        }
+        return results;
+    }
 }
